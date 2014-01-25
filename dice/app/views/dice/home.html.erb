@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Dice Game</title>
+	<link rel="stylesheet" type="text/css" href="dice.css.scss">
+</head>
+
+
+<body>
+	<div class = "titleBox">
+		<h1> Dice Game </h1>
+	</div>
+	
+	<div>
+		<h2> Welcome. </h2>
+		<p> Here are the rules: </p>
+		<ul>
+			<li> Roll the dice to start the game. </li>
+			<li> If your first roll is a 7 or 11, you win. </li>
+			<li> If your first roll is a 2, 3, or 12, you lose. </li>
+			<li> Anything else becomes your goal. Roll your goal again before rolling a 7, and you win. Roll a 7 instead of your goal, and you lose. </li>
+		</ul>			
+	</div>
+	
+	<%= button_to "Roll to start the game!", {action: "roll", :attempt => @reroll, :goal => @target}, {:class => "button"} %>
+		
+</body>
+</html>

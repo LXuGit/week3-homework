@@ -1,0 +1,8 @@
+<div class = "titleBox">
+		<h1> Dice Game </h1>
+</div>
+
+<p><%= image_tag "#{@die1}.png" %> <%=image_tag "#{@die2}.png" %></p>
+<h3>Your goal is now <%= @target_param %>.</h3>
+<h4>Now try to get <%= @target_param %> again before you roll a 7. </h4>
+<%= button_to "Roll the dice", {action: "roll", :attempt => @reroll, :goal => @target_param}, {:class => "button"} %>

@@ -1,0 +1,21 @@
+// Place all the styles related to the Dice controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@CHARSET "UTF-8";
+
+.titleBox{
+	border-bottom: 1px solid gray;
+}
+
+.button{
+	text-align: center;
+	font-weight: bold;
+	background: #33AD5C;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;	
+}
+

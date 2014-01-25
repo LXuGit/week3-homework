@@ -1,0 +1,7 @@
+<div class = "titleBox">
+		<h1> Dice Game </h1>
+</div>
+
+<p><%= image_tag "#{@die1}.png" %> <%=image_tag "#{@die2}.png" %></p>
+<h3>YOU WIN!</h3>
+<%= button_to "Start Over", {action: "home"}, {:class => "button"} %>

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Dice::Application.config.secret_key_base = 'e84a15f9ad4c3e62aa371d6e4fea41d3067d8f7ee9bc0e9b58aca8a6a6a5ff9bc652a2dfd0eaab2f271478080feea2b97309c42c13563e8a19a32fad54a8b651'
+Dice::Application.config.secret_key_base = 'f4ac18b931d88f1e12930d8452577a5a8a67a41d9217ced7d715008de6a3e669582e50a4e4a235c013a63fe3a0153bf0c77454d2f251f0be1e27d06f95d4044e'
