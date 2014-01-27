@@ -1,5 +1,5 @@
 class DiceController < ApplicationController
-  def home
+  def home		#reset
   	@target = 0
   	@reroll = 0
   end
@@ -20,7 +20,7 @@ class DiceController < ApplicationController
   		elsif sum == 2 || sum == 3 || sum == 12
   			render 'lose' and return
   		else
-  			@reroll = '1'
+  			@reroll = '1'	#later roll
   			@@goal = sum
   			@target_param = @@goal
   			render 'tryagain' and return
@@ -31,7 +31,7 @@ class DiceController < ApplicationController
   		elsif sum == 7
   			render 'lose' and return
   		else
-  			@target_param = @@goal
+  			@target_param = @@goal	#pass goal to the view
   			render 'tryagain' and return
   		end
   	end
